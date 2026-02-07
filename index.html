@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Mini Projects Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <h1>JavaScript Mini Projects</h1>
+
+  <div class="menu">
+    <button onclick="showApp('todo')">To-Do</button>
+    <button onclick="showApp('calc')">Calculator</button>
+    <button onclick="showApp('bmi')">BMI</button>
+    <button onclick="showApp('timer')">Timer</button>
+    <button onclick="showApp('weather')">Weather</button>
+  </div>
+
+  <!-- To-do -->
+  <div class="app active" id="todo">
+    <h2>To-Do List</h2>
+    <input id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- Calculator -->
+  <div class="app" id="calc">
+    <h2>Calculator</h2>
+    <input id="calcInput" disabled>
+    <div class="grid">
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('/')">/</button>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('*')">*</button>
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('-')">-</button>
+      <button onclick="press('0')">0</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="clearCalc()">C</button>
+      <button onclick="press('+')">+</button>
+    </div>
+  </div>
+
+  <!-- BMI -->
+  <div class="app" id="bmi">
+    <h2>BMI Calculator</h2>
+    <input id="height" placeholder="Height (cm)">
+    <input id="weight" placeholder="Weight (kg)">
+    <button onclick="calcBMI()">Calculate</button>
+    <p id="bmiResult"></p>
+  </div>
+
+  <!-- Timer -->
+  <div class="app" id="timer">
+    <h2>Countdown Timer</h2>
+    <input id="seconds" placeholder="Seconds">s
+    <button onclick="startTimer()">Start</button>
+    <h3 id="timeDisplay"></h3>
+  </div>
+
+  <!-- Weather -->
+  <div class="app" id="weather">
+    <h2>Weather</h2>
+    <p>City: Delhi</p>
+    <p>🌤 Temperature: 32°C</p>
+    <p>Humidity: 45%</p>
+    <p>Condition: Clear Sky</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
