@@ -3,7 +3,8 @@
 A clean and responsive JavaScript Mini Projects Dashboard that combines multiple beginner-to-intermediate level projects into a single web application.
 This project demonstrates strong fundamentals of JavaScript, DOM manipulation, and UI logic using vanilla JS.
 
-🚀 Live Features
+🚀 Live Features/Demo Link
+https://deveshrdev98-ship-it.github.io/Javascript-Projectwebsite/
 
 This website contains multiple portals, each opening a different JavaScript mini project:
 
